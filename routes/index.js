@@ -14,7 +14,7 @@ router.get('/about',(req,res)=>{
 
 router.get('/education',(req,res)=>{
     res.render('education',{myData});
-});
+}); //
 
 router.get('/workexperience',(req,res)=>{
     res.render('workexperience',{myData});
