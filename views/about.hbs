@@ -1,5 +1,5 @@
-<h1 align=center>Hello{{myData.name}}</h1>
-<div align=center class="con"> <br>
+{{!-- <h1 align=center>Hello{{myData.name}}</h1>
+<div align=center class="container"> <br>
     <div class="pro">
         <img src="../img\119137737_725594031356410_9011285860922681500_n.jpg" alt=""></div>
     <ul class="">
@@ -13,4 +13,23 @@
            <b> Address:</b> {{Address}}</p>
         {{/with}}
     </ul>
+</div> --}}
+
+<div class="container">
+    <h1 align=center>Hello{{myData.name}}</h1>
+<div align=center class="container"> <br>
+    <div class="card">
+  <img src="../img\119137737_725594031356410_9011285860922681500_n.jpg" alt="" style="width:100%">
+  {{#with myData.aboutme}}
+ <h1>Full name: </b>{{Fullname}} </h1>
+  <p class="title"><b>Nickname:</b>  {{nickname}}</p>
+  <p><b> Date of birth:</b> {{dob}}</p>
+  <p><b>  Phone:</b>  {{Phone}} </p>
+  <p><b> Email: </b>{{Email}} </p>
+  <p><b> Website: </b>{{Website}} </p>
+  <p><b> Address:</b> {{Address}}</p>
+  
+  
+  {{/with}}
+</div>
 </div>
