@@ -13,7 +13,7 @@ app.use('/',router);
 app.listen(
     PORT,
     () => {
-      console.log(`Listening to port ${PORT}`);
+      console.log(`Listening to port ${3000}`);
     }
   );
   
